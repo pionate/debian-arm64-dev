@@ -26,6 +26,7 @@ ADD ./02_nolocales /etc/dpkg/dpkg.cfg.d/02_nolocales
 # and https://github.com/resin-io-projects/armv7hf-debian-qemu to enable running
 # ARM binaries on a non-binfmt_misc environment; cf.
 # https://resin.io/blog/building-arm-containers-on-any-x86-machine-even-dockerhub/
+ADD thirdparty/qemu-aarch64-static /usr/bin/qemu-arm-static
 ADD thirdparty/qemu-aarch64-static /usr/bin
 ADD thirdparty/resin-xbuild /usr/bin
 ADD thirdparty/cross-build-start /usr/bin
